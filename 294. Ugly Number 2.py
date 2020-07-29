@@ -12,17 +12,9 @@ class Solution:
             A2,A3,A5 = out[i2]*2,out[i3]*3,out[i5]*5
             
             A = min(A2,A3,A5)   
-            
-            if A2== A:
-                i2+=1
-
-            if A3== A:
-                i3+=1       
-            
-            if A5== A:
-                i5+=1
+            if A2== A: i2+=1
+            if A3== A: i3+=1       
+            if A5== A: i5+=1
                      
             out.append(A)
-        
-        print(out)
         return out[-1]
